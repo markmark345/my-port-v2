@@ -7,7 +7,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Home</title>
       </Head>
-      <div className=" px-10 py-[500px]">
+      <div className=" px-10 py-[500px] bg-slate-600">
         <h1>Whereas recognition of the inherent dignity</h1>
       </div>
     </>
