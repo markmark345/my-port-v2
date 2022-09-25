@@ -1,19 +1,18 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
-const Home: NextPage = () => {
-  return (
-    <>
-      <Head>
-        <title>Home</title>
-      </Head>
-      <div className="bg-red-300 px-10">
-        <h1>Hello</h1>
-      </div>
-    </>
-  );
+// const
+
+const Index: NextPage = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    console.log('sss');
+    router.replace('/home');
+  }, [router]);
+
+  return <></>;
 };
 
-export default Home;
+export default Index;
